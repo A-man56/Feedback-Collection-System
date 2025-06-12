@@ -427,6 +427,8 @@ header {
 .feedback-form header {
   text-align: center;
   margin-bottom: 30px;
+  border: none;
+  padding: 0;
 }
 
 .question-item {
@@ -439,9 +441,29 @@ header {
   gap: 10px;
 }
 
+.rating-options {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin: 10px 0;
+}
+
 .rating-option {
-  display: inline-block;
-  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.rating-option input[type="radio"] {
+  width: auto;
+  margin: 0;
+}
+
+.rating-option label {
+  margin: 0;
+  font-size: 14px;
+  cursor: pointer;
 }
 
 .rating-labels {
@@ -449,6 +471,7 @@ header {
   justify-content: space-between;
   font-size: 14px;
   color: #666;
+  margin-top: 10px;
 }
 
 /* Thank You Page */
@@ -498,6 +521,11 @@ header {
   .summary-stats {
     grid-template-columns: 1fr;
   }
+
+  .rating-options {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 }
 
 /* Loading and Error States */
@@ -510,4 +538,221 @@ header {
 
 .error-message {
   color: var(--danger-color);
+}
+
+/* Authentication Pages (Login/Signup) */
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--text-color);
+  font-size: 28px;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container form div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.container form label {
+  font-weight: 500;
+  color: var(--text-color);
+  margin-bottom: 0;
+}
+
+.container form input,
+.container form select {
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.2s;
+}
+
+.container form input:focus,
+.container form select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(106, 38, 205, 0.1);
+}
+
+.container form button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 10px;
+}
+
+.container form button:hover {
+  background-color: var(--primary-hover);
+}
+
+.container form button:active {
+  transform: translateY(1px);
+}
+
+.container span {
+  text-align: center;
+  margin-top: 20px;
+  color: #666;
+  font-size: 14px;
+}
+
+.container span a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.container span a:hover {
+  text-decoration: underline;
+}
+
+/* Home Page Styles */
+.home-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.home-container h1 {
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.home-container button {
+  background-color: var(--danger-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.home-container button:hover {
+  background-color: #c82333;
+}
+
+.home-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.home-container ul li {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Error and Success States */
+.error-state {
+  color: var(--danger-color);
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(220, 53, 69, 0.1);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+.success-state {
+  color: var(--success-color);
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(40, 167, 69, 0.1);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+/* Loading States */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  font-size: 18px;
+  color: #666;
+}
+
+.loading::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid var(--primary-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-left: 10px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive Design for Auth Pages */
+@media (max-width: 480px) {
+  .container {
+    margin: 20px;
+    padding: 20px;
+    max-width: none;
+  }
+
+  .container h1 {
+    font-size: 24px;
+  }
+
+  .container form input,
+  .container form select,
+  .container form button {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+}
+
+/* Focus states for better accessibility */
+.container form input:focus,
+.container form select:focus,
+.container form button:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Disabled button state */
+.container form button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.container form button:disabled:hover {
+  background-color: #6c757d;
+  transform: none;
 }
