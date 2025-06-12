@@ -1,1 +1,15 @@
-# deploy-mern-app-1
+Feedback-Collection-System
+Screenshorts
+![Screenshot 2025-06-12 171553](https://github.com/user-attachments/assets/fc0ae1c8-2c3a-4729-8636-4987db5cedfb)
+![Screenshot 2025-06-12 171609](https://github.com/user-attachments/assets/d39f36a7-7d3c-4dfe-ad6c-b865cf7da345)
+![Screenshot 2025-06-12 171916](https://github.com/user-attachments/assets/dd160a8e-821d-4a15-84fc-d1fc59a8e827)
+![Screenshot 2025-06-12 171931](https://github.com/user-attachments/assets/4bca8b31-c0ee-4aeb-a2e7-5e5582b166c1)
+![Screenshot 2025-06-12 171949](https://github.com/user-attachments/assets/b067a894-085a-4655-a91b-0207312394f8)
+![Screenshot 2025-06-12 172004](https://github.com/user-attachments/assets/fd172697-bfb9-4427-8cfe-7f99799323ed)
+![Screenshot 2025-06-12 172028](https://github.com/user-attachments/assets/d374f39f-3601-4be8-8d47-1c0d18c5c9fb)
+![Screenshot 2025-06-12 172135](https://github.com/user-attachments/assets/4a0f9d23-0b84-47af-a9d1-3c3eba302944)
+![Screenshot 2025-06-12 172146](https://github.com/user-attachments/assets/4af3b406-f9e9-4388-97dc-5a8adcf1f2a9)
+![Screenshot 2025-06-12 172159](https://github.com/user-attachments/assets/d4b68307-a2ed-47a6-9513-5ea405223850)
+![Screenshot 2025-06-12 172329](https://github.com/user-attachments/assets/4f93f507-60f7-43a1-b838-2e959ca30492)
+![Screenshot 2025-06-12 172344](https://github.com/user-attachments/assets/43e4f6ca-26cf-444b-b46b-af61165a5c0c)
+![Screenshot 2025-06-12 172404](https://github.com/user-attachments/assets/946e10c6-a341-4aa1-ab8e-add8ae1ec8dc)
